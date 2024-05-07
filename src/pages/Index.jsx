@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Container, VStack, Input, Button, List, ListItem, ListIcon, IconButton, useToast } from '@chakra-ui/react';
+import { Box, Container, VStack, Input, Button, List, ListItem, ListIcon, IconButton, useToast, Link, Text, Flex } from '@chakra-ui/react';
 import { FaTrash, FaCheckCircle } from 'react-icons/fa';
 
 const Index = () => {
@@ -64,6 +64,10 @@ const Index = () => {
           ))}
         </List>
       </VStack>
+      <Flex as="footer" py={4} mt={10} justifyContent="center" borderTop="1px" borderColor="gray.200">
+        <Text fontSize="sm" mr={2}>© 2023 Todo App, Inc.</Text>
+        <Link href="/privacy-policy" color="blue.500" fontSize="sm">Privacy Policy</Link>
+      </Flex>
     </Container>
   );
 };
